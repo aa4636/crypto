@@ -49,7 +49,7 @@ export const TradePanel: React.FC<Props> = ({ prices, onTrade }) => {
     setIsTrading(false);
     
     // Reset form after successful trade
-    setQuantity(1);
+    setQuantity(0.001);
   };
 
   const currentPrice = prices[symbol];
@@ -101,8 +101,8 @@ export const TradePanel: React.FC<Props> = ({ prices, onTrade }) => {
           </label>
           <input
             type="number"
-            step="1"
-            min="1"
+            step="0.0001"
+            min="0.0001"
             value={quantity}
             onChange={(e) => setQuantity(Math.max(0.0001, parseFloat(e.target.value) || 0.0001))}
             className="w-full p-3 rounded-lg bg-gray-800/50 border border-gray-600 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all duration-200"

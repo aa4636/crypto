@@ -16,7 +16,7 @@ export const Wallet: React.FC = () => {
         </div>
       </div>
 
-      {/* Balance Card - Full Width */}
+      {/* Balance Card */}
       <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/20 rounded-xl p-4 mb-6 transform hover:scale-[1.02] transition-all duration-300">
         <div className="flex justify-between items-center">
           <div>
@@ -33,9 +33,9 @@ export const Wallet: React.FC = () => {
         </div>
       </div>
 
-      {/* Two Column Layout with Equal Height */}
+      {/* Two Column Layout for Holdings and assets */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 min-h-[300px]">
-        {/* Left Column - Holdings (Full Height) */}
+        {/* Holdings */}
         <div className="bg-gray-800/20 rounded-xl p-5 border border-gray-700/50 flex flex-col">
           <div className="flex items-center justify-between mb-4">
             <h3 className="font-semibold text-lg text-gray-300 flex items-center gap-2">
@@ -85,9 +85,9 @@ export const Wallet: React.FC = () => {
           </div>
         </div>
 
-        {/* Right Column - Stats (Stacked 75% / 25%) */}
+        {/* Assets and Total Balance */}
         <div className="flex flex-col gap-4 h-full">
-          {/* Total Assets Card - 75% height */}
+          {/* Total Assets */}
           <div className="flex-1 bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-xl p-5 transform hover:scale-[1.02] transition-all duration-300 min-h-[180px]">
             <div className="flex items-center justify-between mb-4">
               <h3 className="font-semibold text-gray-300 flex items-center gap-2">
@@ -105,7 +105,7 @@ export const Wallet: React.FC = () => {
             </div>
           </div>
 
-          {/* Available Balance Card - 25% height */}
+          {/* Available Balance */}
           <div className="flex-1 bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-xl p-5 transform hover:scale-[1.02] transition-all duration-300 min-h-[100px] max-h-[120px]">
             <div className="flex items-center justify-between mb-2">
               <h3 className="font-semibold text-gray-300 flex items-center gap-2">

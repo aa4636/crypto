@@ -10,8 +10,7 @@ export const Portfolio: React.FC<{ prices: Record<string, number> }> = ({ prices
   );
 
   const totalEquity = wallet.balance + portfolioValue;
-  const profitLoss = portfolioValue; // Since initial investment would be tracked separately
-  const profitLossPercentage = wallet.balance > 0 ? (portfolioValue / totalEquity) * 100 : 0;
+  const profitLoss = portfolioValue;
 
   return (
     <div className="glass-card rounded-xl p-6 animate-fade-in-up">

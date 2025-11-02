@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 
 interface Ticker {
-  s: string; // symbol
+  s: string; 
   c: string; // last price
   P: string; // price change percent
 }
@@ -56,6 +56,7 @@ export const PriceTicker: React.FC<{
     if (previous === undefined) return "text-gray-300";
     if (current > previous) return "text-green-400";
     if (current < previous) return "text-red-400";
+    if (changePercent) return ""
     return "text-gray-300";
   };
 
